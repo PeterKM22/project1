@@ -42,3 +42,18 @@ footer{
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* page-specific styles */
+.hero {
+    background-image: url(hero-image.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+}
+.sevices ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.contact address {
+    
+}
