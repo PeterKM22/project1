@@ -1,36 +1,46 @@
-<!DOCTYPE html>
+PE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XM Commutes Taxi - Rugby, UK</title>
+  <title>Contact - XM COMMUTES</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body  class="background-container2">
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="contact">
-            <h2>Contact Information</h2>
-            <p>If you have any questions or need assistance, feel free to contact us:</p>
-            <address>
-                <p>Email: a href="maitto:info@xmcommutestaxi.co.uk">info@xmcommutestaxi.uk</a></p>
-                <p>Phone: <a href="tel:+44 1784 123 456"></a></p>
-                <p>Adress: 123 Main Street, Rugby, UK</p>
-            </address>
+<!-- Sidebar/menu -->
+<div class="sidebar">
+  <div class="header">XM COMMUTES</div>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="#">Contact</a>
+</div>
 
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 XM Commutes Taxi - Rugby, UK</p>
-    </footer> 
+<!-- Page content -->
+<div class="main-content">
+  <!-- Contact -->
+  <div id="contact" class="section-content">
+    <div class="section-title">
+        <h1 >Contact Us</h1>
+        <hr style="width:50px;border:5px solid white">
+    </div>
+    <div class="sliding-container" style="margin-bottom: 60px;">
+      <p class="sliding-text" style="font-size: larger;">Do you want to book a ride? Fill out the form and let us know where you need to go. We love helping people reach their destinations safely and comfortably.!</p>
+  </div>
+    <!--<p class="sliding-text" style="margin-bottom: 60px;">Do you want to book a ride? Fill out the form and let us know where you need to go. We love helping people reach their destinations safely and comfortably.!</p>-->
+    <form class="contact-form" action="/action_page.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>Powered by <a href="" target="_blank">XM COMMUTES</a></p>
+</footer>
+
 </body>
 </html>
