@@ -1,238 +1,275 @@
-body, h1, h2, h3, h4, h5 {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 48px;
-    color: #FFFFFF;
-    top: 40%;
+*
+{
+    padding: 0px;
+    font-family: sans-serif;
+    margin: 0px;
 }
-
-html, body {
+html
+{
+    width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
-
-body {
-    font-size: 16px;
-    background-color: hsl(0, 0%, 2%);
+body
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
-
-.sidebar {
-    background-color: #ffeb3b;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    padding-top: 50px;
-   
-        font-size: 24px;
-
-}
-
-.sidebar a {
-    display: block;
-    padding: 16px;
-    text-decoration: none;
-    color: #333;
-    transition: 0.3s;
-   
-}
-
-.sidebar a:hover {
-    background-color: #ddd;
-   
-}
-
-.header {
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.main-content {
-    flex: 1;
-    margin-left: 250px;
-    padding: 20px;
+.sidebar
+{
+    width: 100%;
+    height: 70px;
+    background-color: yellow;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
-
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+.header
+{
+    font-size: 18px;
+    padding-left: 10px;
 }
-
-.photo-grid img {
+.bardata
+{
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-.photo-grid img:hover {
-    transform: scale(1.05);
+.bardata a
+{
+    font-size: 12px;
+    color: #212121;
+    text-decoration-line: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 1s;
 }
-
-.section-title {
-    text-align: center;
-    margin-bottom: 30px;
+.bardata a:hover
+{
+    background-color: lightyellow;
 }
-
-.section-title h1 {
-    font-size: 36px;
-    color: white;
-    font-size: 48;
-}
-
-.section-content {
-    margin-bottom: 50px;
-    text-align: center;
-}
-.text-container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    color: white;
-    font-family: "font-kerning" auto;
-    font-size: larger;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form input[type="text"],
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size: large;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 15px;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: larger;
-}
-
-.contact-form button:hover {
-    background-color: hsl(63, 93%, 52%);
-}
-
-.footer {
-    background-color:  white;
-    color: white;
-    text-align: center;
-    padding: 5px 0;
-    width: 100%;
-    flex-shrink: 0;
-}
- 
- 
-  .center-button {
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    background-color: green;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .background-container {
-    width: 100%;
-    height: 100%;
-    background: url('images/tax1.png') no-repeat center center fixed;
-    background-size: cover;
+.main-content
+{
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.header2
+{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.header2 p
+{
     color: white;
-   
-  }
-  .sliding-text {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.header2 h3,.header2 h4
+{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.footer 
+{
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+}
+.footer p,.footer a
+{
+    color: white;
+    font-size: 12px;
+}
+.center-button,#submit
+{
+    outline: none;
+    background-color: green;
+    color: white;
+    width: 150px;
+    border: none;
+    height: 40px;
+    font-size: 15px;
+}
+.background-container
+{
+    background: url('images/tax1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.background-container1
+{
+    background: url('images/taxservice.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.background-container2
+{
+    background: url('images/call.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+#servicesFlex
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#sevicesData
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sevicesData button 
+{
+    width: 60%;
+    outline: none;
+    border: none;
+    background-color: green;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 2px;
+    color: white;
+}
+#contact
+{
+    text-align: center;
+}
+.section-title
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-content
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form
+{
+    width: 90%;
+    margin-top: 30px;
+}
+input
+{
+    width: 96%;
+    height: 35px;
+    outline: none;
+    border: 1px solid gainsboro;
+    background-color: white;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+textarea
+{
+    width: 96%;
+    height: 100px;
+    outline: none;
+    border: 1px solid gainsboro;
+    background-color: white;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.sliding-text 
+{
     display: inline-block;
-    white-space: nowrap;
     overflow: hidden;
     position: relative;
     animation: slide 10s linear infinite;
  
 }
+#socialIcons
+{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#socialIcons a
+{
+    color: yellow;
+}
 
-.justified-center {
-    text-align: justify;
-    margin: 0 auto;
-    width: 500px;
-  }
-@keyframes slide {
-    0% {
-        transform: translate(0, 0);
+@media only screen and (min-width: 768px) 
+{
+    body
+    {
+        flex-direction: row;
     }
-    100% {
-        transform: translate(calc(100vw - 100%), calc(100vh - 100%));
+    .sidebar
+    {
+        width: 220px;
+        min-width: 220px;
+        height: 100%;
+        justify-content: start;
+    }
+    .header
+    {
+        margin-top: 20px;
+    }
+    .bardata
+    {
+        flex-direction: column;
+    }
+    .bardata a
+    {
+        font-size: 18px;
+        height: 60px;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    .center-button
+    {
+        height: 50px;
+        width: 200px;
+        font-size: 18px;
+    }
+    #sevicesData button
+    {
+        width: 250px;
+    }
+    form
+    {
+        width: 400px;
     }
 }
-.background-page {
-   
-    background-size: cover;
-    background-position: center;
-  }
-  .background-container1 {
-    width: 100%;
-    height: 100%;
-    background: url('images/taxservice.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  .center-button1{
-    height: 100;
-    width: 100;
-    margin: 5px; /* Add space between buttons */
-    padding: 10px 20px;
-    font-size: 24px;
-    color: white;
-    background-color: green; /* Button background color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-
-}
-.background-container2{
-    width: 100%;
-    height: 100%;
-    background: url('images/callus.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
