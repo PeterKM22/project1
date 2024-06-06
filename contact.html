@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contact - XM COMMUTES</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+    <title>Contact - XM COMMUTES</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./pro/css/all.min.css">
 </head>
 <body  class="background-container2">
-
-<!-- Sidebar/menu -->
-<div class="sidebar">
-  <div class="header">XM COMMUTES</div>
-  <a href="index.html">Home</a>
-
-
-  <a href="services.html">Services</a>
-  <a href="#">Contact</a>
-</div>
-
-<!-- Page content -->
-<div class="main-content">
-  <!-- Contact -->
-  <div id="contact" class="section-content">
-    <div class="section-title">
-        <h1 >Contact Us</h1>
-        <hr style="width:50px;border:5px solid white">
+    <!-- Sidebar/menu -->
+    <div class="sidebar">
+        <div class="header">XM COMMUTES</div>
+        <div class="bardata">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contacts.html">Contact</a>
+        </div>
     </div>
-    <div class="sliding-container" style="margin-bottom: 60px;">
-      <p class="sliding-text" style="font-size: larger;">Do you want to book a ride? Fill out the form and let us know where you need to go. We love helping people reach their destinations safely and comfortably.!</p>
-  </div>
-    <!--<p class="sliding-text" style="margin-bottom: 60px;">Do you want to book a ride? Fill out the form and let us know where you need to go. We love helping people reach their destinations safely and comfortably.!</p>-->
-    <form class="contact-form" action="/action_page.php" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="text" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</div>
-</div>
+    <!-- Page content -->
+    <div class="main-content">
+        <!-- Contact -->
+        <div id="contact" class="section-content">
+            <div class="section-title" style="margin-bottom: 50px;">
+                <h1 style="color: #212121;">Contact Us</h1>
+                <hr style="width:50px;border:5px solid gainsboro">
+            </div>
+            <div class="sliding-container" style="margin-bottom: 60px;">
+                <p class="sliding-text" style="font-size: larger;">Do you want to book a ride? Fill out the form and let us know where you need to go. We love helping people reach their destinations safely and comfortably.!</p>
+            </div>
 
-<!-- Footer -->
-<footer class="footer">
-  <p>Powered by <a href="" target="_blank">XM COMMUTES</a></p>
-</footer>
+            <form class="contact-form" action="/action_page.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button id="submit" type="submit">Send Message</button>
 
+                <div id="socialIcons">
+                    <a href="#"><i class="fa-sharp fa-regular fa-phone"></i></a>
+                    <a href="#"><i class="fa-sharp fa-regular fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-sharp fa-regular fa-location-dot"></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Powered by <a href="" target="_blank">XM COMMUTES</a></p>
+    </footer>
 </body>
 </html>
